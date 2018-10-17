@@ -1,0 +1,154 @@
+/*--------- css reset -----------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* --------------css reset end-------------------- */
+body{
+    background-color: rgba(214, 214, 214, 0.61);
+    font-family: 微軟正黑體;
+   
+}
+.header{
+    height: 380px;
+    padding: 50px;
+    background-image: url(../images/visual.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 100px;
+    
+}
+.title{
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+}
+/* --------select box--------- */
+  /* Custom Select */
+  .centerOnPage {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .select {
+    position: relative;
+    display: block;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    overflow: hidden;
+    border-radius: .25em;
+  }
+  #slct{
+    font-family: 微軟正黑體;
+  }
+  select {
+    -webkit-appearance: none;
+    border: 0 !important;
+    background: #d6d6d6bd;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0 0 0 .5em;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  select::-ms-expand {
+    display: none;
+  }
+  /* Arrow */
+  .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 1em;
+    background: #2e97ff;
+    pointer-events: none;
+  }
+  /* Transition */
+  .select:hover::after {
+    color: #f39c12;
+  }
+  .select::after {
+    transition: .45s all ease;
+  }
+/* ------------select box end------------------- */
+.hotArea{
+    height: 120px;
+    width: 75%;
+    background-color: rgba(255, 255, 255, 0.664);
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    border-radius: 10px;
+    box-shadow: 8px 8px 15px #bdbdbdd0;
+    display: flex;
+    align-items: center;
+}
+.hotArea ul{
+  display: flex;
+  justify-content: center;
+  width: 100%;  
+}
+.hotArea ul li{
+  width: 15%;
+  height: 30px;
+  border: 1px solid #2e97ff;
+  text-align: center;
+  background-color: rgb(255, 166, 0);
+  cursor: pointer;
+}
+.hotArea ul li:hover{
+  background-color: rgb(235, 114, 0);
+  transition:0.5s;
+}
+.main{
+}
+.footer{
+    height: 90px;
+    background-color: #559AC8;
+}
